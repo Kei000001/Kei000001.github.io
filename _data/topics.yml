@@ -1,0 +1,19 @@
+# Categories shown in the "Projects" dropdown and on the Topics page.
+# id    : category name used in post front matter (categories: [robotics])
+# label : short name in the dropdown
+# title : heading on the Topics page
+- id: robotics
+  label: Robotics
+  title: Robotics & Physical AI
+- id: agents
+  label: Agents
+  title: LLM Agents
+- id: imaging
+  label: Imaging
+  title: Imaging
+- id: papers
+  label: Papers
+  title: Papers
+- id: kaggle
+  label: Kaggle
+  title: Kaggle

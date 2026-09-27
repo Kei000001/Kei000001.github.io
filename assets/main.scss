@@ -1,0 +1,90 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// ------------------------------------------------------------------
+// "Projects" dropdown in the header (see _includes/header.html)
+// ------------------------------------------------------------------
+.site-nav {
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    > .page-link {
+      margin-right: 0;
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    min-width: 150px;
+    padding: 6px 0;
+    text-align: left;
+    line-height: $base-line-height;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-dropdown:hover .dropdown-menu,
+  .nav-dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-link {
+    display: block;
+    padding: 6px 16px;
+    color: $text-color;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: lighten($grey-color-light, 5%);
+      text-decoration: none;
+    }
+  }
+
+  // Small screens: no hover, so list the topics under "Projects"
+  @include media-query($on-palm) {
+    .nav-dropdown {
+      display: block;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    .dropdown-menu {
+      display: block;
+      position: static;
+      min-width: 0;
+      padding: 0;
+      text-align: right;
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+
+    .dropdown-link {
+      padding: 3px 10px;
+      margin-left: 20px;
+      color: $grey-color;
+      @include relative-font-size(0.875);
+    }
+  }
+}
+
+// Topics page: note shown for categories without posts
+.topic-empty {
+  color: $grey-color;
+}

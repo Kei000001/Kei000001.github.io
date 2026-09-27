@@ -3,14 +3,11 @@ layout: page
 title: Topics
 permalink: /topics/
 ---
-
-{%- assign topic_names = "robotics,agents,imaging,papers,kaggle" | split: "," -%}
-{%- assign topic_labels = "Robotics & Physical AI,LLM Agents,Imaging,Papers,Kaggle" | split: "," -%}
-
-{%- for name in topic_names -%}
-  {%- assign posts = site.categories[name] -%}
+{%- comment -%} Categories are defined in _data/topics.yml {%- endcomment -%}
+{%- for topic in site.data.topics -%}
+  {%- assign posts = site.categories[topic.id] -%}
+<h2 id="{{ topic.id }}">{{ topic.title | escape }}</h2>
   {%- if posts and posts.size > 0 -%}
-<h2 id="{{ name }}">{{ topic_labels[forloop.index0] }}</h2>
 <ul class="post-list">
     {%- for post in posts -%}
   <li>
@@ -19,5 +16,7 @@ permalink: /topics/
   </li>
     {%- endfor -%}
 </ul>
+  {%- else -%}
+<p class="topic-empty">No posts yet.</p>
   {%- endif -%}
 {%- endfor -%}

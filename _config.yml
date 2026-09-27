@@ -31,10 +31,9 @@ kaggle_username: ""        # Set your Kaggle ID here (e.g. "kei000001") to show 
 # Home page settings
 show_excerpts: true
 excerpt_separator: "<!--more-->"   # Only the text before this marker appears in the post list
-header_pages:
+header_pages:            # Topics (/topics/) is reached from the Projects dropdown
   - about.md
   - projects.md
-  - topics.html
 minima:
   date_format: "%b %-d, %Y"
 
