@@ -14,10 +14,4 @@ As an Image Sensor Design Engineer, I specialize in developing advanced imaging 
 
 ## Recent Work
 
-- [My Awesome MCP Server](https://github.com/Kei000001/my-awesome-mcp-server)
-  An MCP server that bundles a calculator, SQLite data analysis, external APIs (weather, news, IP lookup), web search, and Python execution into a single server. It can be launched directly from GitHub with `uvx`.
-
-## Links
-
-- GitHub: [@Kei000001](https://github.com/Kei000001)
-- LinkedIn: [Profile](https://www.linkedin.com/in/kei-harada/)
+- [My Awesome MCP Server](https://github.com/Kei000001/my-awesome-mcp-server) — An MCP server that bundles a calculator, SQLite data analysis, external APIs (weather, news, IP lookup), web search, and Python execution into a single server. It can be launched directly from GitHub with `uvx`.
