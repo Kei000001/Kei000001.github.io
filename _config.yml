@@ -1,0 +1,32 @@
+title: Kei's Tech Notes
+author: Kei000001
+description: >-
+  MCP・LLM エージェント・Python などの技術メモ。
+  学んだこと、試したこと、つまずいたことを記録しています。
+lang: ja
+timezone: Asia/Tokyo
+url: "https://kei000001.github.io"
+baseurl: ""
+
+# テーマ（GitHub Pages が標準で対応している minima）
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# フッターに表示するアカウント（アイコン付きリンクになる）
+github_username: Kei000001
+linkedin_username: kei-harada
+
+# トップページの設定
+show_excerpts: true
+excerpt_separator: "<!--more-->"   # 記事一覧には、この目印より前だけを表示
+header_pages:
+  - about.md
+minima:
+  date_format: "%Y-%m-%d"
+
+# 公開しないファイル
+exclude:
+  - README.md
+  - create_blog.sh
