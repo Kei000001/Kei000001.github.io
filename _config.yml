@@ -1,7 +1,8 @@
 title: Tech Notes
 author: Kei000001
+tagline: Computational imaging, robot learning & LLM agents   # Short subtitle used in the home page <title>
 description: >-
-  Notes on computational imaging, RAW image processing, LLM agents, and more.
+  Notes on computational imaging, robot learning, and LLM agents.
   A record of what I learned, what I tried, and where I got stuck.
 lang: en
 timezone: Asia/Tokyo
@@ -13,16 +14,27 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from   # Keeps old post URLs working after a category change
 
 # Accounts shown in the footer (rendered as icon links)
 github_username: Kei000001
 linkedin_username: kei-harada
+kaggle_username: ""        # Set your Kaggle ID here (e.g. "kei000001") to show it in the footer
+
+# Categories used in posts (front matter: categories: [robotics])
+#   robotics : VLA fine-tuning (pi0.5), RoboOps, Physical AI course work
+#   agents   : MCP, agent implementations from books
+#   imaging  : RAW image processing, computational imaging
+#   papers   : Paper reimplementations and improvements
+#   kaggle   : Kaggle competitions and solutions
 
 # Home page settings
 show_excerpts: true
 excerpt_separator: "<!--more-->"   # Only the text before this marker appears in the post list
 header_pages:
   - about.md
+  - projects.md
+  - topics.html
 minima:
   date_format: "%b %-d, %Y"
 

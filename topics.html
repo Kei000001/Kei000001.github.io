@@ -1,0 +1,23 @@
+---
+layout: page
+title: Topics
+permalink: /topics/
+---
+
+{%- assign topic_names = "robotics,agents,imaging,papers,kaggle" | split: "," -%}
+{%- assign topic_labels = "Robotics & Physical AI,LLM Agents,Imaging,Papers,Kaggle" | split: "," -%}
+
+{%- for name in topic_names -%}
+  {%- assign posts = site.categories[name] -%}
+  {%- if posts and posts.size > 0 -%}
+<h2 id="{{ name }}">{{ topic_labels[forloop.index0] }}</h2>
+<ul class="post-list">
+    {%- for post in posts -%}
+  <li>
+    <span class="post-meta">{{ post.date | date: site.minima.date_format }}</span>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  </li>
+    {%- endfor -%}
+</ul>
+  {%- endif -%}
+{%- endfor -%}

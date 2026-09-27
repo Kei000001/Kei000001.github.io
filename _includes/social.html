@@ -1,0 +1,10 @@
+{%- comment -%}
+  Overrides minima 2.5.1 _includes/social.html.
+  Change: keeps only GitHub and LinkedIn, and adds Kaggle (not built into minima).
+  Kaggle appears only when kaggle_username is set in _config.yml.
+{%- endcomment -%}
+<ul class="social-media-list">
+  {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username | escape }}</span></a></li>{%- endif -%}
+  {%- if site.linkedin_username -%}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">{{ site.linkedin_username | escape }}</span></a></li>{%- endif -%}
+  {%- if site.kaggle_username and site.kaggle_username != "" -%}<li><a href="https://www.kaggle.com/{{ site.kaggle_username | cgi_escape | escape }}"><svg class="svg-icon" viewBox="0 0 16 16" aria-hidden="true"><text x="3" y="13.5" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700">k</text></svg> <span class="username">{{ site.kaggle_username | escape }}</span></a></li>{%- endif -%}
+</ul>

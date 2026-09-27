@@ -2,7 +2,9 @@
 layout: post
 title: "Verifying My MCP Server: From Local Tools to a One-Line uvx Launch"
 date: 2026-09-27 09:00:00 +0900
-categories: [mcp]
+categories: [agents]
+redirect_from:
+  - /mcp/2026/09/27/verifying-my-mcp-server.html
 tags: [mcp, fastmcp, uvx, claude-desktop, github-copilot]
 ---
 
