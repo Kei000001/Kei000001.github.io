@@ -4,16 +4,16 @@ title: About
 permalink: /about/
 ---
 
-## 自己紹介
+## About Me
 
-エンジニアとして、MCP（Model Context Protocol）や LLM エージェント、Python を使った業務の自動化に取り組んでいます。
+I'm an engineer working on automating everyday work with MCP (Model Context Protocol), LLM agents, and Python.
 
-## 最近の取り組み
+## Recent Work
 
 - [My Awesome MCP Server](https://github.com/Kei000001/my-awesome-mcp-server)
-  電卓・データベース分析・外部 API・Web 検索を1つにまとめた MCP サーバー。`uvx` で GitHub から直接起動できます。
+  An MCP server that bundles a calculator, database analysis, external APIs, and web search into one. It can be launched directly from GitHub with `uvx`.
 
 ## Links
 
 - GitHub: [@Kei000001](https://github.com/Kei000001)
-- LinkedIn: [プロフィール](https://www.linkedin.com/in/kei-harada/)
+- LinkedIn: [Profile](https://www.linkedin.com/in/kei-harada/)

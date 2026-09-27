@@ -1,6 +1,6 @@
 # Kei000001.github.io
 
-GitHub Pages（Jekyll + minima）で公開している技術ブログのソースです。
+Source of my tech blog, published with GitHub Pages (Jekyll + minima).
 
-- 公開 URL: https://kei000001.github.io
-- 記事の追加: `_posts/YYYY-MM-DD-タイトル.md` を作って push するだけ
+- Site: https://kei000001.github.io
+- To add a post: create `_posts/YYYY-MM-DD-title.md` and push
