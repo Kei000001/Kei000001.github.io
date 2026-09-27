@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-As an Image Sensor Design Engineer, I specialize in developing advanced imaging technologies while actively pioneering work efficiency through AI.
+As an Image Sensor Design Engineer, I specialize in developing advanced imaging technologies while driving engineering productivity with AI.
 
 ## Focus & Interests
 
@@ -15,3 +15,7 @@ As an Image Sensor Design Engineer, I specialize in developing advanced imaging 
 ## Recent Work
 
 - [My Awesome MCP Server](https://github.com/Kei000001/my-awesome-mcp-server) — An MCP server that bundles a calculator, SQLite data analysis, external APIs (weather, news, IP lookup), web search, and Python execution into a single server. It can be launched directly from GitHub with `uvx`.
+
+---
+
+*Opinions are my own and do not represent my employer.*
